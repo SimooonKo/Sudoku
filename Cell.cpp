@@ -34,7 +34,7 @@ void Cell::removeTriedValue(int val) {
 }
 
 void Cell::resetAvailableValues() {
-    noneTriedVal = {1, 2, 3};
+    noneTriedVal = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 }
 
 Cell::~Cell() {}

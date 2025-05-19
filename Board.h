@@ -10,7 +10,7 @@
 
 class Board {
     private :
-        std::array<std::array<Cell, 3>, 3> m_grid; ///< Grille 3x3 de cellules
+        std::array<std::array<Cell, 9>, 9> m_grid;
     public :
         Board();
         Board(bool autoFill);
@@ -21,5 +21,7 @@ class Board {
         bool IsAvalaible(Cell&, int valeur);
         bool fillCell(Cell& cell);
         bool fillBoard();
+        bool isValid();
+        void removeValues(int count);
         void print() const;
 };
